@@ -1,7 +1,8 @@
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <>
-      <p className="text-sm text-gray-500">© 2025 MovieMart</p>
+      <p className="text-sm text-gray-500">© {currentYear} MovieMart</p>
       <p className="text-sm text-gray-500">
         Developed by
         <a
