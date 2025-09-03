@@ -1,0 +1,22 @@
+export const topRatedMovies = [
+  "The Shawshank Redemption",
+  "The Godfather",
+  "The Dark Knight",
+  "Pulp Fiction",
+  "Forrest Gump",
+  "Inception",
+  "The Matrix",
+  "Goodfellas",
+  "The Silence of the Lambs",
+  "Schindler's List",
+  "Fight Club",
+  "The Lord of the Rings: The Fellowship of the Ring",
+  "Star Wars: Episode V - The Empire Strikes Back",
+  "The Usual Suspects",
+  "Se7en",
+  "The Lion King",
+  "Gladiator",
+  "Titanic",
+  "The Avengers",
+  "Interstellar"
+];
