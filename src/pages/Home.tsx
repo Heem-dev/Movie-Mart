@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { useMovies } from "../hooks/useMovies";
+import { useMovies } from "@/hooks/useMoviesContext";
 
 export default function Home() {
   const { movies: allMovies, loading, error } = useMovies();
@@ -36,31 +36,31 @@ export default function Home() {
         style={{ minHeight: "18rem" }}
       >
         <div className="flex items-end justify-center relative space-x-0">
-          {movies[0] && movies[0].Poster && movies[0].Poster !== "N/A" && (
+          {movies[0] && movies[0].poster && (
             <div className="transform -rotate-12 md:-rotate-10 -translate-x-6 md:-translate-x-10 scale-90 md:scale-95 z-10">
               <img
-                src={movies[0].Poster}
-                alt={movies[0].Title}
+                src={movies[0].poster}
+                alt={movies[0].title}
                 className="w-24 h-36 sm:w-32 sm:h-48 md:w-44 md:h-64 lg:w-56 lg:h-80 object-cover rounded-lg shadow-lg"
               />
             </div>
           )}
 
-          {movies[1] && movies[1].Poster && movies[1].Poster !== "N/A" && (
+          {movies[1] && movies[1].poster && (
             <div className="relative z-20 -mx-6 md:-mx-8">
               <img
-                src={movies[1].Poster}
-                alt={movies[1].Title}
+                src={movies[1].poster}
+                alt={movies[1].title}
                 className="w-36 h-56 sm:w-44 sm:h-68 md:w-64 md:h-96 lg:w-72 lg:h-[28rem] object-cover rounded-lg shadow-xl"
               />
             </div>
           )}
 
-          {movies[2] && movies[2].Poster && movies[2].Poster !== "N/A" && (
+          {movies[2] && movies[2].poster && (
             <div className="transform rotate-12 md:rotate-10 translate-x-6 md:translate-x-10 scale-90 md:scale-95 z-10">
               <img
-                src={movies[2].Poster}
-                alt={movies[2].Title}
+                src={movies[2].poster}
+                alt={movies[2].title}
                 className="w-24 h-36 sm:w-32 sm:h-48 md:w-44 md:h-64 lg:w-56 lg:h-80 object-cover rounded-lg shadow-lg"
               />
             </div>
